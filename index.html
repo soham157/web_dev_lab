@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soham | Portfolio</title>
-<link rel="stylesheet" href="styles.css"></head>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <header>
+  <nav class="navbar" aria-label="Main">
+    <a class="brand" href="#top">Soham</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="top">
     <h1>Soham</h1>
     <p>Web development student</p>
-    <nav aria-label="Main">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -37,22 +40,29 @@
     <section id="projects">
       <h2>Projects</h2>
 
-      <article>
+      <article class="card">
+        <span class="badge">New</span>
         <h3>Project One</h3>
         <p>Short description of the project.</p>
-        <a href="#">View project</a>
+        <div class="card-overlay">
+          <a href="#">View project</a>
+        </div>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Project Two</h3>
         <p>Short description of the project.</p>
-        <a href="#">View project</a>
+        <div class="card-overlay">
+          <a href="#">View project</a>
+        </div>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Project Three</h3>
         <p>Short description of the project.</p>
-        <a href="#">View project</a>
+        <div class="card-overlay">
+          <a href="#">View project</a>
+        </div>
       </article>
     </section>
 
