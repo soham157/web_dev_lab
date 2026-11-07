@@ -137,3 +137,66 @@ footer {
     text-align: center;
   }
 }
+
+/* P10: header and footer with flexbox */
+
+/* sticky footer: body is a column, main grows to fill the space */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+/* header: name on the left, button pushed to the right */
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header-button {
+  margin-left: auto;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* footer: three parts spread across the row */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-top: 1px solid #cccccc;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .header-button {
+    margin-left: 0;
+  }
+
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
+}
