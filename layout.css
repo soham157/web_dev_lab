@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* GRID: the whole page, because it needs rows AND columns */
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "top top"
+    "side content"
+    "bottom bottom";
+  gap: 20px;
+  width: 900px;
+  margin: auto;
+}
+
+.top {
+  grid-area: top;
+  background-color: lightblue;
+  padding: 10px;
+  /* FLEXBOX: title on the left, menu on the right, in ONE row */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  /* FLEXBOX: links in one row */
+  display: flex;
+  gap: 15px;
+}
+
+.side {
+  grid-area: side;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.content {
+  grid-area: content;
+}
+
+.buttons {
+  /* FLEXBOX: buttons in one row */
+  display: flex;
+  gap: 10px;
+}
+
+.buttons a {
+  background-color: lightblue;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.bottom {
+  grid-area: bottom;
+  background-color: lightgray;
+  text-align: center;
+}
