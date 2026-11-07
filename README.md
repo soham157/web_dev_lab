@@ -1,14 +1,17 @@
-# My Portfolio
+# Web Development Lab
 
-A personal portfolio website built as part of my Programming for Web Development lab.
+Portfolio and practice pages for my Programming for Web Development I lab.
 
-## About
-I am a web development student learning HTML, CSS, Git and GitHub.
+## Pages
+- index.html: my portfolio (sticky navbar, project cards with CSS Grid, flexbox header and footer)
+- news.html: newspaper-style layout using a three-column CSS Grid
+- layout.html: a page that uses Grid for the layout and Flexbox for the small parts
 
-## Tech
-- HTML5
-- CSS3
-- Git & GitHub
+## What I learned
+- Terminal basics and Git (branches, merges, tags)
+- Semantic HTML
+- CSS variables, positioning, Flexbox and Grid
 
-## Status
-Work in progress.
+## Tags
+- v1.0.0, v1.1.0: Git practice
+- v2.0.0: finished lab
