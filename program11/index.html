@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soham | CSS Grid Newspaper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <p class="dateline">Wednesday, 11 November 2026 &middot; Web Dev Lab Edition</p>
+    <h1>The Grid Gazette</h1>
+    <p class="tagline">All the layout news that fits in a grid</p>
+  </header>
+
+  <main class="newspaper">
+    <article class="story lead">
+      <h2>Grid Takes Over the Front Page</h2>
+      <p class="byline">By Soham</p>
+      <div class="lead-body">
+        <p>CSS Grid lets a page be laid out in rows and columns at the same
+           time. Instead of nudging boxes around with floats, the layout is
+           described once on the container and every story drops into its
+           place.</p>
+        <p>This lead story is split into text columns using the
+           <code>column-count</code> property, just like a printed paper. The
+           rest of the page uses named grid areas, so the layout can be
+           rearranged in a media query without touching the HTML.</p>
+        <p>Resize the window and watch the stories move from one column to
+           two, and then to three.</p>
+      </div>
+    </article>
+
+    <aside class="story sidebar">
+      <h2>In Brief</h2>
+      <ul>
+        <li>Flexbox handles one direction, Grid handles two.</li>
+        <li>Named areas make layouts readable.</li>
+        <li><code>fr</code> units share out the free space.</li>
+        <li><code>gap</code> replaces margin hacks.</li>
+      </ul>
+    </aside>
+
+    <article class="story s1">
+      <h3>Flexbox Report</h3>
+      <p>The navbar and card grid from P9 wrap neatly using flex-wrap.</p>
+    </article>
+
+    <article class="story s2">
+      <h3>Header and Footer</h3>
+      <p>A sticky footer and fluid sizing with clamp() from P10.</p>
+    </article>
+
+    <article class="story s3">
+      <h3>Git Desk</h3>
+      <p>Branches, commits and tags keep every program safe on GitHub.</p>
+    </article>
+
+    <article class="story s4">
+      <h3>Design Tokens</h3>
+      <p>Colours, spacing and type sizes live in variables, so one change
+         updates the whole site.</p>
+    </article>
+
+    <blockquote class="story quote">
+      Good layout is mostly about deciding what goes where, then letting the
+      browser do the arithmetic.
+    </blockquote>
+  </main>
+
+  <footer class="paper-footer">
+    <p>&copy; 2026 Soham &middot; github.com/soham157</p>
+  </footer>
+</body>
+</html>
