@@ -1,0 +1,36 @@
+body {
+  font-family: Georgia, serif;
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+}
+
+.newspaper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 900px;
+  margin: auto;
+}
+
+.headline {
+  grid-column: span 3;
+  text-align: center;
+}
+
+.main-story {
+  grid-column: span 2;
+}
+
+.sidebar {
+  grid-row: span 2;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.news-footer {
+  grid-column: span 3;
+  text-align: center;
+}
