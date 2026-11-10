@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soham | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Soham</h1>
+    <p>Web Development Student</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="about">
+      <h2>About Me</h2>
+      <figure>
+        <img src="profile.jpg" alt="Portrait of Soham" width="150">
+        <figcaption>Soham, 2026</figcaption>
+      </figure>
+      <p>I am a student learning web development. I enjoy building
+         clean, accessible pages with HTML and CSS.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article>
+        <h3>Semantic Bio Page</h3>
+        <p>A one-page bio built with semantic HTML tags.</p>
+        <a href="../program5/index.html">View project</a>
+      </article>
+
+      <article>
+        <h3>Newspaper Layout</h3>
+        <p>A multi-column news page built with CSS.</p>
+        <a href="../program11/news.html">View project</a>
+      </article>
+
+      <article>
+        <h3>Online Compiler</h3>
+        <p>A browser-based code editor and runner (in progress).</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git and GitHub</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article>
+        <h3>Programming for Web Development - I</h3>
+        <p>Laboratory course covering Git, HTML, CSS, Flexbox and Grid.</p>
+        <time datetime="2026-11">November 2026</time>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </p>
+        <button type="submit">Send</button>
+      </form>
+      <address>
+        <a href="https://github.com/soham157">github.com/soham157</a>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Soham</p>
+  </footer>
+</body>
+</html>
