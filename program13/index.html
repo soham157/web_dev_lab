@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soham | JavaScript and the DOM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="js-header">
+    <h1>JavaScript Lab</h1>
+    <button id="theme-toggle" class="js-btn" type="button">Dark mode</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Counter</h2>
+      <p>Count: <strong id="count">0</strong></p>
+      <button id="inc" class="js-btn" type="button">+1</button>
+      <button id="dec" class="js-btn" type="button">-1</button>
+      <button id="reset" class="js-btn js-btn-outline" type="button">Reset</button>
+    </section>
+
+    <section>
+      <h2>To-do list</h2>
+      <form id="todo-form" class="todo-form">
+        <label for="todo-input" class="visually-hidden">New task</label>
+        <input id="todo-input" type="text" placeholder="Add a task" required>
+        <button class="js-btn" type="submit">Add</button>
+      </form>
+      <ul id="todo-list" class="todo-list"></ul>
+      <p id="todo-summary" class="todo-summary"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Soham &middot; github.com/soham157</p>
+  </footer>
+</body>
+</html>
