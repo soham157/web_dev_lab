@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soham | Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#top" class="brand">Soham</a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button">&#9776; Menu</label>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section id="about">
+      <h1>Flexbox Lab</h1>
+      <p>Resize the browser window. The navbar collapses into a menu and
+         the cards rearrange themselves.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Bio Page</h3>
+          <p>A one-page bio built with semantic HTML tags.</p>
+          <a href="../program5/index.html">View</a>
+        </article>
+        <article class="card">
+          <h3>Portfolio</h3>
+          <p>A full portfolio page with navigation, projects and a form.</p>
+          <a href="../program6/index.html">View</a>
+        </article>
+        <article class="card">
+          <h3>Design System</h3>
+          <p>Design tokens and a typography scale in CSS.</p>
+          <a href="../program7/index.html">View</a>
+        </article>
+        <article class="card">
+          <h3>Positioning</h3>
+          <p>Sticky navbar and card overlays.</p>
+          <a href="../program8/index.html">View</a>
+        </article>
+        <article class="card">
+          <h3>Online Compiler</h3>
+          <p>A browser-based code editor and runner (in progress).</p>
+          <a href="#projects">In progress</a>
+        </article>
+        <article class="card">
+          <h3>Git Lab</h3>
+          <p>Branches, commits and version tags on GitHub.</p>
+          <a href="https://github.com/soham157/web_dev_lab">View repo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Flexbox</li>
+        <li>Git</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p id="contact">&copy; 2026 Soham &middot; github.com/soham157</p>
+  </footer>
+</body>
+</html>

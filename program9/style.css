@@ -1,0 +1,91 @@
+/* ========== FLEXBOX (P9) ========== */
+
+/* ----- Navbar (mobile first) ----- */
+.site-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;            /* menu drops to a second row on mobile */
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+}
+
+.brand { font-weight: var(--weight-bold); text-decoration: none; }
+
+.menu-toggle { display: none; }   /* hidden checkbox */
+
+.menu-button {
+  cursor: pointer;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.nav-links {
+  display: none;              /* closed by default on mobile */
+  flex-direction: column;
+  flex-basis: 100%;
+  list-style: none;
+  margin: var(--space-2) 0 0;
+  padding: 0;
+}
+.nav-links a { display: block; padding: var(--space-2) 0; }
+
+/* Checkbox checked = menu open */
+.menu-toggle:checked ~ .nav-links { display: flex; }
+
+/* ----- Card grid ----- */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.card {
+  flex: 1 1 100%;             /* one column on mobile */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+.card a { margin-top: var(--space-2); }
+
+/* ----- Skills as a flex row ----- */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+}
+.skill-list li {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+}
+
+/* ----- Tablet: two cards per row ----- */
+@media (min-width: 600px) {
+  .card { flex: 1 1 calc(50% - var(--space-3)); }
+}
+
+/* ----- Desktop: full navbar, three cards per row ----- */
+@media (min-width: 900px) {
+  .menu-button { display: none; }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    gap: var(--space-4);
+    margin: 0;
+  }
+  .nav-links a { padding: 0; }
+
+  .card { flex: 1 1 calc(33.333% - var(--space-3)); }
+}
